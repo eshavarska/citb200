@@ -9,3 +9,7 @@
 Product Item::getProduct(){
     return product;
 }
+
+int Item::getQuantity(){
+    return quantity;
+}
