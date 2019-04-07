@@ -11,4 +11,6 @@ void TextPrinter::print(std::ostream &out, Invoice invoice){
        out << item.getQuantity() << " x " << item.getProduct().getName() << " (" << item.getProduct().getPrice() << ")" 
        << " = " << invoice.computeItemTotal(item) << endl;
    }
+
+   out << "Subtotal: " << invoice.computeSubtotal()<< endl;
 }
