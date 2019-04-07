@@ -15,7 +15,8 @@ class Invoice {
     vector <Item> getItems();
     double computeItemTotal(Item item);
     double computeSubtotal();
-
+    double computeTaxes();
+    
     private:
     vector<Item> items;
 

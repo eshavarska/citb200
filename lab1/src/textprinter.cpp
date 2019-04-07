@@ -13,4 +13,5 @@ void TextPrinter::print(std::ostream &out, Invoice invoice){
    }
 
    out << "Subtotal: " << invoice.computeSubtotal()<< endl;
+   out << "Taxes: " << invoice.computeTaxes() << endl;
 }
