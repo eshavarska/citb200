@@ -14,7 +14,7 @@ class Invoice {
     vector <Product> getProducts();
 
     private:
-    vector <Product> products;
+    vector<Item> items;
 
 };
 
