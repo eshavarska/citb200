@@ -1,15 +1,15 @@
 #include "item.h"
 
- Item::Item(Product p, int qty) : product(p){
+ Item::Item(const Product &p, int qty) : product(p){
      if (qty < 0){
          quantity = 0;
      }else quantity = qty;
  }
 
-Product Item::getProduct(){
+const Product & Item::getProduct() const{
     return product;
 }
 
-int Item::getQuantity(){
+const int & Item::getQuantity() const{
     return quantity;
 }
